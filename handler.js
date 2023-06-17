@@ -102,7 +102,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.emerald))
                     user.emerald = 1
                 if (!isNumber(user.diamond))
-                    user.diamond = 0
+                    user.diamond = 20
                 if (!isNumber(user.gold))
                     user.gold = 0
                 if (!isNumber(user.iron))
@@ -227,7 +227,7 @@ export async function handler(chatUpdate) {
                     rock: 0,
                     string: 0,
                     emerald: 1,
-                    diamond: 0,
+                    diamond: 20,
                     gold: 0,
                     iron: 0,
                     upgrader: 0,
