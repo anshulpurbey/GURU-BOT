@@ -9,8 +9,8 @@ export async function before(m, { conn }) {
     while (canLevelUp(user.level, user.exp, global.multiplier))
         user.level++
     user.role = global.rpg.role(user.level).name
-    if (before !== user.level) {
-        m.reply(`
+   // if (before !== user.level) {
+   //     m.reply(`
 *▢ LEVEL UP*
 
  *${before}* ‣  *${user.level}*
