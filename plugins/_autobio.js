@@ -8,11 +8,11 @@ let _muptime
       process.send('uptime')
       _muptime = await new Promise(resolve => {
         process.once('message', resolve)
-        setTimeout(resolve, 1000)
+        setTimeout(resolve, 600000)
       }) * 1000
     }
     let muptime = clockString(_muptime)
-		let bio = `\n🟢 Time Active ${muptime}\n\n ┃ 💎  By GURU`
+		let bio = `\n🟢 Time Active ${muptime}\n\n ┃ 💎  By AKP`
 		await this.updateProfileStatus(bio).catch(_ => _)
 		setting.status = new Date() * 1
 
