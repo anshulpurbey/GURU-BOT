@@ -680,7 +680,7 @@ case 'remove':
         for (let user of participants) {
             let pp, ppgp;
             try {
-                pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png');
+                pp = await this.profilePictureUrl(user, 'image');
                 ppgp = await this.profilePictureUrl(id, 'image');
             } catch (error) {
                 console.error(`Error retrieving profile picture: ${error}`);
