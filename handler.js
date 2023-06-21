@@ -678,15 +678,15 @@ export async function participantsUpdate({ id, participants, action }) {
                 if (chat.welcome) {
                     let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata;
                     for (let user of participants) {
-                        let pp = 'https://i.imgur.com/qlIvwaV.jpg';
-                        let ppgp = 'https://i.imgur.com/qlIvwaV.jpg';
+                        let pp = 'https://i.imgur.com/8B4jwGq.jpeg';
+                        let ppgp = 'https://i.imgur.com/8B4jwGq.jpeg';
                         try {
                             pp = await this.profilePictureUrl(user, 'image');
                             ppgp = await this.profilePictureUrl(id, 'image');
                         } catch (error) {
                             console.error(`Error retrieving profile picture: ${error}`);
-                            pp = 'https://i.imgur.com/qlIvwaV.jpg'; // Assign default image URL
-                            ppgp = 'https://i.imgur.com/qlIvwaV.jpg'; // Assign default image URL
+                            pp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
+                            ppgp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
                         } finally {
                             text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
                                 (chat.sBye || this.bye || conn.bye || 'HELLO, @user')).replace('@user', '@' + user.split('@')[0]);
