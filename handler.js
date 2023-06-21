@@ -680,8 +680,8 @@ case 'remove':
         for (let user of participants) {
             let pp, ppgp;
             try {
-                pp = await this.profilePictureUrl(user, 'image');
-                ppgp = await this.profilePictureUrl(id, 'image');
+                pp = await this.profilePictureUrl(user, 'image')
+                ppgp = await this.profilePictureUrl(id, 'image')
             } catch (error) {
                 console.error(`Error retrieving profile picture: ${error}`);
                 pp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
