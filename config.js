@@ -19,7 +19,7 @@ global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c7
 global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
 global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
 global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
-global.lolkeysapi = ['BrunoSobrino']
+global.lolkeysapi = ['SGWN']
 
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -51,7 +51,7 @@ global.premium = 'true'
 global.packname = 'AKP┃ᴮᴼᵀ' 
 global.author = '@AnshulPurbey' 
 global.igfg = '▢ Follow your heart😊' 
-global.dygp = 'https://chat.whatsapp.com/CvRdHhOJStALfLZ11nDVxP'
+global.dygp = 'https://chat.whatsapp.com/F09vEgeO5KBHQZSu8h6Kbu'
 global.fgsc = 'https://github.com/anshulpurbey/GURU-BOT' 
 global.fgyt = 'https://youtube.com'
 global.fgpyp = 'https://youtube.com'
