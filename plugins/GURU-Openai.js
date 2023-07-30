@@ -8,8 +8,8 @@ let handler = async (m, { text, usedPrefix, command }) => {
     const data = await response.json();
     const { text: result } = data.data || {};
     const model = data.data?.detail?.model;
-    
-    const fullResult = `${result}\n\nModel: ${model}`;
+    const creator = data.creator || '';
+    const fullResult = `${result}\n\nModel: ${model}\nCreator: ${creator}`;
     m.reply(fullResult.trim());
   } catch (error) {
     console.error('Error:', error); // Log the error
