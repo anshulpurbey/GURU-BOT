@@ -7,7 +7,7 @@ let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.js
 m.reply(`
 *≡ SCRIPT*
 
-▢ Git : https://github.com/anshulpurbey/GURU-BOT
+▢ Git : ${_package.homepage}
 `.trim())
     
 }
