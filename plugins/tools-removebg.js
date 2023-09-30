@@ -6,12 +6,12 @@ import dotenv from 'dotenv';
 
 dotenv.config(); // Load environment variables from .env file
 
-
 const handler = async (m, { conn, text }) => {
   try {
     const q = m.quoted ? m.quoted : m;
     const mime = (q.msg || q).mimetype || '';
     const img = await q.download();
+    const apikey = process.env.REMOVEBG_KEY; // Use the API_KEY from the environment variable
 
     const formData = new FormData();
     formData.append('size', 'auto');
@@ -20,7 +20,7 @@ const handler = async (m, { conn, text }) => {
     const response = await axios.post('https://api.remove.bg/v1.0/removebg', formData, {
       headers: {
         ...formData.getHeaders(),
-        'X-Api-Key': process.env.REMOVE_BG_API_KEY,
+        'X-Api-Key': apikey,
       },
       responseType: 'arraybuffer',
       encoding: null,
@@ -35,7 +35,7 @@ const handler = async (m, { conn, text }) => {
     fs.writeFileSync('no-bg.png', imageData);
 
     // Add the caption to the image
-    const caption = '𝙈𝘼𝘿𝙀 𝘽𝙔 𝙂𝙐𝙍𝙐-𝘽𝙊𝙏 𝙒𝙄𝙏𝙃 𝙇𝙊𝙑𝙀';
+    const caption = `MADE BY ${botname}`;
     conn.sendFile(m.chat, 'no-bg.png', '', caption, m);
   } catch (e) {
     console.error(e);
@@ -43,5 +43,8 @@ const handler = async (m, { conn, text }) => {
   }
 };
 
+handler.help = ['removebg'];
+handler.tags = ['tools'];
 handler.command = /^rmbg|removebg$/i;
 export default handler;
+
