@@ -571,10 +571,10 @@ export async function participantsUpdate({
                         contextInfo: {
                         mentionedJid: [user],
                         externalAdReply: {
-                        title: "ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ",
-                        body: "welcome to Group",
+                        title: "𝕋𝕙𝕖 𝔸𝕂ℙ-𝔹𝕆𝕋",
+                        body: "Welcome to the Group",
                         thumbnailUrl: welcomeApiUrl,
-                        sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                        sourceUrl: 'https://youtu.be/UZF9cZJUl7k?si=ae9eS7UecOLIf06h',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
@@ -624,10 +624,10 @@ export async function participantsUpdate({
                         contextInfo: {
                         mentionedJid: [user],
                         externalAdReply: {
-                        title: "ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ",
-                        body: "Goodbye from  Group",
+                        title: "𝕋𝕙𝕖 𝔸𝕂ℙ-𝔹𝕆𝕋",
+                        body: "Goodbye",
                         thumbnailUrl: leaveApiUrl,
-                        sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                        sourceUrl: 'https://youtu.be/UZF9cZJUl7k?si=ae9eS7UecOLIf06h',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
