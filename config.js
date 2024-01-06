@@ -53,9 +53,9 @@ global.botname = 'डैंक समाज बॉट'
 global.premium = 'true'
 global.packname = 'AKP┃ᴮᴼᵀ' 
 global.author = '@AnshulPurbey' 
-global.menuvid = 'https://telegra.ph/file/085c4b1068f0f4f8db970.mp4'
+global.menuvid = 'https://i.imgur.com/AjDzGgG.mp4'
 global.igfg = '▢ Follow your Heart with the consent of your Brain\n' 
-global.dygp = 'https://chat.whatsapp.com/BibVE6tUICp3qOm2a1Ur8f'
+global.dygp = 'https://chat.whatsapp.com/BFfD1C0mTDDDfVdKPkxRAA'
 global.fgsc = 'https://github.com/anshulpurbey/GURU-BOT' 
 global.fgyt = 'https://youtube.com'
 global.fgpyp = 'https://youtube.com'
@@ -71,7 +71,7 @@ global.error = '❌'
 global.xmoji = '🔥' 
 
 global.multiplier = 69 
-global.maxwarn = '3' // máxima advertencias
+global.maxwarn = '3'
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
