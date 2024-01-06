@@ -579,7 +579,7 @@ export async function participantsUpdate({
                         title: "𝕋𝕙𝕖 𝔸𝕂ℙ-𝔹𝕆𝕋",
                         body: "Welcome to the Group",
                         thumbnailUrl: welcomeApiUrl,
-                        sourceUrl: 'https://youtu.be/UZF9cZJUl7k?si=ae9eS7UecOLIf06h',
+                        sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
@@ -632,7 +632,7 @@ export async function participantsUpdate({
                         title: "𝕋𝕙𝕖 𝔸𝕂ℙ-𝔹𝕆𝕋",
                         body: "Goodbye",
                         thumbnailUrl: leaveApiUrl,
-                        sourceUrl: 'https://youtu.be/UZF9cZJUl7k?si=ae9eS7UecOLIf06h',
+                        sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
